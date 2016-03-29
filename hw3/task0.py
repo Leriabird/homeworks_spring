@@ -33,7 +33,7 @@ elif command == 'diff':
     else:
         namelst = [f for f in listdir(path) if isfile(join(path, f))]
         for char in namelst:
-        subcommand = "diff " + path + " ./sad/" + char # the callname passed to subprocess
-        print(subprocess.run(subcommand, stdin=None, input=None, stdout=None, shell=True, check=False))
+            subcommand = "diff " + path + " ./sad/" + char # the callname passed to subprocess
+            print(subprocess.run(subcommand, stdin=None, input=None, stdout=None, shell=True, check=False))
 else:
     print("Wrong command")
